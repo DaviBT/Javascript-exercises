@@ -1,7 +1,8 @@
 function factorial(n){
-    for(let f = n; f >= 1; f--){
-        res = n * f 
+    let fact = 1
+    for(let c = n; c > 1; c--){
+        fact *= c
     }
-    return res
+    return fact
 }
-console.log(factorial(8))
+console.log(factorial(5))
