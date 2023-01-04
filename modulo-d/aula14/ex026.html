@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age & gender exercise</title>
+    <link rel="stylesheet" href="ex026.css">
+</head>
+<body>
+    <noscript>Your browser does not supoort Javascript!</noscript>
+    <header>
+        <h1>Age & gender checker</h1>
+    </header>
+    <section>
+
+        <form method="get" onsubmit="sent()">
+            <fieldset id="year">
+                <legend>Age</legend>
+                <label for="iyear">Year of birth:</label>
+                <input type="number" min="1900" max="2099" step="1" value="Year" name="year" id="iyear" required>
+            </fieldset>
+
+            <fieldset id="gender">
+                <legend>Gender</legend>
+                <input type="radio" name="gender" id="imale" required>
+                <label for="imale">Male</label>
+                <br>
+                <input type="radio" name="gender" id="ifem" required>
+                <label for="ifem">Female</label>
+            </fieldset>
+            <input type="submit" value="Send">
+            <input type="reset" value="Clean">
+        </form>
+
+        <div id="divmsg">
+            <h2 id="msg"></h2>
+        </div>
+
+        <div id=img>
+            <!--child-->
+            <img class="boychild" src="images/boychild.jpg" alt="boy child">
+            <img class="girlchild" src="images/gilrchild.jpg" alt="gilr child">
+            <!--teenager-->
+            <img class="boyteen" src="images/boyteen.jpg" alt="boy teenager">
+            <img class="girlteen" src="images/girlteen.jpg" alt="girl teenager" id="portrait">
+            <!--young-->
+            <img class="menyoung" src="images/menyoung.jpg" alt="men young">
+            <img class="womanyoung" src="images/womanyoung.jpg" alt="woman young" >
+            <!--senior-->
+            <img class="mensenior" src="images/mensenior.jpg" alt="men middle aged">
+            <img class="womansenior" src="images/womansenior.jpg" alt="woman middle aged">
+            <!--aged-->
+            <img class="menaged" src="images/menaged.jpeg" alt="men aged">
+            <img class="womanaged" src="images/womanaged.jpg" alt="woman aged" id="portrait">
+        </div>
+
+    </section>
+
+<script type="text/javascript" src="ex026.js"></script>
+</body>
+</html>
