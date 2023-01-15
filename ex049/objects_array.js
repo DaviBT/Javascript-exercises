@@ -20,4 +20,4 @@ let animals = {
     }
 ]
 } 
-console.log(animals.felines.length[0])
+console.log(animals[0].name)
