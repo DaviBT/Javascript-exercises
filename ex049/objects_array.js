@@ -1,23 +1,26 @@
-let animals = {
-    felines: [
-    {// 1 (length)
-        name: cat,
+ const felines = [
+    {
+        name: "cat",
         age: 3
     },
-    {// 2 (length)
-        name: lion,
+    {
+        name: "lion",
         age: 10
     }
-],
-    aquatics: [
-    {// 1 (length)
-        name: koi,
+]
+    const aquatics = [
+    {
+        name: "koi",
         age:1
     },
-    {// 2 length
-        name: whiteShark,
+    {
+        name: "whiteShark",
         age: 5
     }
 ]
+
+let animals = {
+    felines,
+    aquatics,
 } 
-console.log(animals[0].name)
+console.log(animals.felines[1]) /* will show: lion properties */
