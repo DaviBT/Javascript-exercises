@@ -1,7 +1,7 @@
-// deleting the last value of the array
+// deleting the first value of the array
 
 let workers = ["Jones", "Max", "David", "Lewis"]
 
-workers.pop()
+workers.shift()
 
 console.log(workers)
