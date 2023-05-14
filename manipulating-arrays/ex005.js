@@ -2,7 +2,7 @@
 
 let workers = ["Jones", "Max", "David", "Lewis"]
 
-workers.slice(1,3) // making a slice from the item number 1 untill the item nuber 3
+workers.slice(1,3) // making a slice from the item number 1 until the item number 3
 
 console.log(workers)
 
