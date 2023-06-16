@@ -7,33 +7,51 @@ class person {
 }
 
 class employee extends person {
-  constructor(job, salary) {
-    this.job = job;
-    this.salary = salary;
-  }
-
-  toPresent() {
-    console.log("I work with " + this.job);
+    constructor(name, age, job, salary) {
+        super(name, age);
+        this.job = job;
+        this.salary = salary;
   }
 }
 
 class programer extends employee {
-  constructor(programingLanguage) {
+  constructor(name, job, salary, programingLanguage) {
+    super(name, job, salary)
     this.programingLanguage = programingLanguage;
   }
+
+  toPresent(){
+    super.toPresent();
+    console.log(`My name is ${this.name},I work as ${this.job}, programing in ${this.programingLanguage} and I make $ ${this.salary} a month.`)
+  }
 }
-const programerProgramingLanguage = new programer("JavaScript");
+//instance for programer
+const programerInstance= new programer("Caio", "programer", 8000, "Dart");
+
+
 
 class designer extends employee {
-  constructor(typeofDesign) {
-    this.typeofDesign = typeofDesign;
+    constructor(name, age, job, salary, typeofDesign) {
+        super(name, age, job, salary);
+        this.typeofDesign = typeofDesign;
+  }
+
+  toPresent(){
+    super.toPresent();
+    console.log(`My name is ${this.name},I work as ${this.cargo}, specifically in ${this.typeofDesign} and I make $ ${this.salary} a month.`)
   }
 }
-const designerTypeOfDesign = new designer("UX");
+const designerInstance = new designer("Thomas", "designer", 4000, "UX");
 
 class manager extends employee {
-  constructor(departament) {
-    this.departament = departament;
+    constructor(name, age, job, salary, department) {
+        super(name, age, job, salary);
+        this.department = department;
+  }
+
+  toPresent(){
+    super.toPresent();
+    console.log(`My name is ${this.name},I work as ${this.job}, specifically in ${this.departament} department and I make $ ${this.salary} a month.`)
   }
 }
-const managerDepartment = new manager("development");
+const managerDepartmentInstance = new manager("development");
