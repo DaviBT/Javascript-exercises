@@ -18,18 +18,18 @@ class programer extends employee {
     this.programingLanguage = programingLanguage;
   }
 }
-const programerProgramingLanguage = new programer("JavaScript")
+const programerProgramingLanguage = new programer("JavaScript");
 
 class designer extends employee {
-    constructor(typeofDesign){
-        this.typeofDesign = typeofDesign;
-    }
+  constructor(typeofDesign) {
+    this.typeofDesign = typeofDesign;
+  }
 }
-const designerTypeOfDesign = new designer("UX")
+const designerTypeOfDesign = new designer("UX");
 
 class manager extends employee {
-    constructor(departament){
-        this.departament = departament;
-    }
+  constructor(departament) {
+    this.departament = departament;
+  }
 }
-const managerDepartment = new manager("development")
+const managerDepartment = new manager("development");
