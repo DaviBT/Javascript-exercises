@@ -20,6 +20,11 @@ class programer extends employee {
 }
 const programerProgramingLanguage = new programer("JavaScript")
 
-class designer extends employee {}
+class designer extends employee {
+    constructor(typeofDesign){
+        this.typeofDesign = typeofDesign;
+    }
+}
+const designerTypeOfDesign = new designer("UX")
 
 class manager extends employee {}
