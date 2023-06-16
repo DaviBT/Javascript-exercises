@@ -1,5 +1,6 @@
 class person {
   constructor(name, age) {
+    // properties
     this.name = name;
     this.age = age;
   }
@@ -12,7 +13,12 @@ class employee extends person {
   }
 }
 
-class programer extends employee {}
+class programer extends employee {
+  constructor(programingLanguage) {
+    this.programingLanguage = programingLanguage;
+  }
+}
+const programerProgramingLanguage = new programer("JavaScript")
 
 class designer extends employee {}
 
