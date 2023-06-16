@@ -27,4 +27,9 @@ class designer extends employee {
 }
 const designerTypeOfDesign = new designer("UX")
 
-class manager extends employee {}
+class manager extends employee {
+    constructor(departament){
+        this.departament = departament;
+    }
+}
+const managerDepartment = new manager("development")
